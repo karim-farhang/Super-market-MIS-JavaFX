@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<HBox xmlns:fx="http://javafx.com/fxml/1" alignment="TOP_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity"
+      minHeight="-Infinity"
+      minWidth="-Infinity" prefHeight="576.0" prefWidth="715.0" xmlns="http://javafx.com/javafx/11.0.1">
+    <children>
+        <VBox alignment="CENTER" prefHeight="576.0" prefWidth="136.0">
+            <children>
+                <JFXButton mnemonicParsing="false" text="دریافت"/>
+            </children>
+        </VBox>
+        <TableView editable="true" nodeOrientation="RIGHT_TO_LEFT" prefHeight="576.0" prefWidth="603.0">
+            <columns>
+                <TableColumn prefWidth="76.0" text="مشتری"/>
+                <TableColumn prefWidth="75.0" text="ادرس"/>
+                <TableColumn prefWidth="74.0" text="باقیمانده"/>
+                <TableColumn prefWidth="75.0" text="بابت"/>
+                <TableColumn prefWidth="75.0" text="واحد"/>
+                <TableColumn prefWidth="104.0" text="تاریخ خرید"/>
+                <TableColumn prefWidth="133.0" text="مهلت باقیمانده"/>
+            </columns>
+        </TableView>
+    </children>
+</HBox>

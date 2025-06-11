@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="1001.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Home">
+    <children>
+        <VBox alignment="CENTER" prefHeight="609.0" prefWidth="375.0" spacing="10.0">
+            <children>
+                <JFXButton buttonType="RAISED" mnemonicParsing="false" onAction="#Import" prefHeight="30.0" prefWidth="200.0" text="وارید کردن  اجناس   " wrapText="true" />
+                <JFXButton buttonType="RAISED" mnemonicParsing="false" onAction="#sell" prefHeight="30.0" prefWidth="200.0" text="فروش اجناس به مشتری   " />
+                <JFXButton buttonType="RAISED" layoutX="61.0" layoutY="220.0" mnemonicParsing="false" onAction="#addSeller" prefHeight="30.0" prefWidth="200.0" text="ثبت کردن فروشنده" />
+                <JFXButton buttonType="RAISED" layoutX="61.0" layoutY="200.0" mnemonicParsing="false" onAction="#AddCustomer" prefHeight="30.0" prefWidth="200.0" text="ثبت کردن مشتری" />
+                <JFXButton buttonType="RAISED" mnemonicParsing="false" onAction="#myReminder" prefHeight="30.0" prefWidth="200.0" text="لیست قرضداری شما ار فروشنده  " wrapText="true" />
+                <JFXButton buttonType="RAISED" mnemonicParsing="false" onAction="#CustomerReminder" prefHeight="30.0" prefWidth="200.0" text="لیست فرضداری مشتریان       " wrapText="true" />
+                <JFXButton buttonType="RAISED" mnemonicParsing="false" onAction="#Fincel" prefHeight="30.0" prefWidth="200.0" text="بخش مالی و آمار     " wrapText="true" />
+                <JFXButton buttonType="RAISED" mnemonicParsing="false" onAction="#Setting" prefHeight="30.0" prefWidth="200.0" text="تنظیمات برنامه   " wrapText="true" />
+                <JFXButton buttonType="RAISED" mnemonicParsing="false" onAction="#About" prefHeight="30.0" prefWidth="200.0" text="راهنمای و در باره برنامه " wrapText="true" />
+                <JFXButton buttonType="RAISED" layoutX="98.0" layoutY="460.0" mnemonicParsing="false" onAction="#Exit" prefHeight="30.0" prefWidth="200.0" text="خروج ار برنامه" wrapText="true" />
+            </children>
+        </VBox>
+        <AnchorPane fx:id="background" prefHeight="609.0" prefWidth="608.0" />
+    </children>
+</HBox>

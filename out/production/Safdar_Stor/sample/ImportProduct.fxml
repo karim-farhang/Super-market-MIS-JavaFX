@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<HBox xmlns:fx="http://javafx.com/fxml/1" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+      minWidth="-Infinity" onMouseEntered="#MouseEntered" prefHeight="604.0" prefWidth="1076.0"
+      spacing="10.0" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="sample.ImportProduct">
+    <children>
+        <TableView fx:id="table" editable="true" nodeOrientation="RIGHT_TO_LEFT" prefHeight="525.0" prefWidth="813.0">
+            <columns>
+                <TableColumn fx:id="col_name" prefWidth="153.0" text="نام"/>
+                <TableColumn fx:id="col_catagory" prefWidth="84.0" text="نوعیت"/>
+                <TableColumn fx:id="col_total" prefWidth="75.0" text="تعداد"/>
+                <TableColumn fx:id="col_unit" prefWidth="78.0" text="واحد"/>
+                <TableColumn fx:id="col_price" prefWidth="93.0" text="قیمت "/>
+                <TableColumn fx:id="col_import_date" prefWidth="116.0" text="تاریخ خرید"/>
+                <TableColumn fx:id="col_expire_date" prefWidth="111.0" text="تاریخ انقضا"/>
+                <TableColumn fx:id="col_sell_name" prefWidth="100.0" text="فروشنده"/>
+            </columns>
+        </TableView>
+        <VBox alignment="TOP_CENTER" prefHeight="545.0" prefWidth="238.0" spacing="25.0">
+            <children>
+                <JFXTextField fx:id="txt_name" alignment="CENTER" labelFloat="true" prefHeight="30.0" prefWidth="220.0"
+                              promptText="نام جنس را وارید کنید"/>
+                <JFXComboBox fx:id="comb_catagory" labelFloat="true" nodeOrientation="RIGHT_TO_LEFT" prefHeight="30.0"
+                             prefWidth="220.0" promptText="          نوعیت جنس را انتخاب کنید"/>
+                <JFXTextField fx:id="txt_total" alignment="CENTER" labelFloat="true" prefHeight="30.0" prefWidth="220.0"
+                              promptText="تعداد جنس را وارید کنید"/>
+                <JFXComboBox fx:id="comb_unit" labelFloat="true" nodeOrientation="RIGHT_TO_LEFT" prefHeight="30.0"
+                             prefWidth="220.0" promptText="          واحد جنس را انتخاب کنید"/>
+                <JFXTextField fx:id="txt_price" alignment="CENTER" labelFloat="true" layoutX="10.0" layoutY="90.0"
+                              prefHeight="30.0" prefWidth="220.0" promptText="قیمت جنس را وارید کنید"/>
+                <JFXTextField fx:id="txt_import_date" alignment="CENTER" labelFloat="true" prefHeight="30.0"
+                              prefWidth="200.0" promptText="تاریخ ثبت"/>
+                <JFXTextField fx:id="txt_expire_date" alignment="CENTER" labelFloat="true" prefHeight="30.0"
+                              prefWidth="200.0" promptText="تاریخ انقضآ"/>
+                <JFXComboBox fx:id="comb_sell_name" labelFloat="true" nodeOrientation="RIGHT_TO_LEFT" prefHeight="30.0"
+                             prefWidth="220.0" promptText="         اسم فروشنده را انتخاب کنید"/>
+                <HBox alignment="CENTER" prefHeight="30.0" prefWidth="216.0" spacing="10.0">
+                    <children>
+                        <JFXButton fx:id="cancel_buton" buttonType="RAISED" mnemonicParsing="false"
+                                   onAction="#cancel_onAction" prefHeight="30.0" prefWidth="90.0" text="لغو کردن"/>
+                        <JFXButton fx:id="ok_JFXButton" buttonType="RAISED" mnemonicParsing="false"
+                                   onAction="#ok_onAction" prefHeight="30.0" prefWidth="90.0" text="ثبت کردن"/>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="30.0" prefWidth="216.0" spacing="10.0">
+                    <children>
+                        <JFXButton fx:id="edite_JFXButton" buttonType="RAISED" mnemonicParsing="false"
+                                   onAction="#edite_JFXButton_onAction" prefHeight="30.0" prefWidth="90.0"
+                                   style="-fx-background-color: rgb(20,200,20);" text="به روز رسانی"
+                                   textFill="#f2eaea"/>
+                        <JFXButton fx:id="delete_buton" buttonType="RAISED" mnemonicParsing="false"
+                                   onAction="#delete_onAction" prefHeight="30.0" prefWidth="90.0"
+                                   style="-fx-background-color: rgb(200,30,30);" text="حذف" textFill="#f2eaea"/>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="30.0" prefWidth="216.0">
+                    <children>
+                        <JFXButton fx:id="pay_mony" buttonType="RAISED" mnemonicParsing="false" onAction="#pay_onAction"
+                                   prefHeight="30.0" prefWidth="90.0" text="پرداخت پول"/>
+                        <JFXButton buttonType="RAISED" mnemonicParsing="false" onAction="#Close" prefHeight="30.0"
+                                   prefWidth="90.0" text="بسته کردن"/>
+                    </children>
+                </HBox>
+            </children>
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="10.0"/>
+            </padding>
+        </VBox>
+    </children>
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+    </padding>
+</HBox>

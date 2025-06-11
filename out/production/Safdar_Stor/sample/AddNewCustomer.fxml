@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<HBox xmlns:fx="http://javafx.com/fxml/1" alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity"
+      minHeight="-Infinity"
+      minWidth="-Infinity" onMouseDragged="#MoseDragged" onMouseEntered="#MouseEntared" onMousePressed="#MouseReleased"
+      prefHeight="553.0" prefWidth="722.0" spacing="10.0" xmlns="http://javafx.com/javafx/11.0.1"
+      fx:controller="sample.AddNewCustomer">
+    <children>
+        <TableView fx:id="table" nodeOrientation="RIGHT_TO_LEFT" prefHeight="376.0" prefWidth="487.0">
+            <columns>
+                <TableColumn fx:id="col_name" prefWidth="89.0" text="نام"/>
+                <TableColumn fx:id="col_address" prefWidth="99.0" text="ادرس"/>
+                <TableColumn fx:id="col_number" prefWidth="97.0" text="شماره تماس"/>
+                <TableColumn fx:id="col_number2" prefWidth="93.0" text="شماره تماس دوم"/>
+                <TableColumn fx:id="col_rag_date" prefWidth="102.0" text="تاریخ ثبت"/>
+            </columns>
+        </TableView>
+        <VBox alignment="TOP_CENTER" prefHeight="528.0" prefWidth="217.0" spacing="30.0">
+            <children>
+                <JFXTextField fx:id="txt_name" alignment="CENTER" labelFloat="true" prefHeight="30.0" prefWidth="200.0"
+                              promptText="نام مشتری را وارید کنید"/>
+                <JFXTextField fx:id="txt_address" alignment="CENTER" labelFloat="true" prefHeight="30.0"
+                              prefWidth="200.0" promptText="ادرس مشتری را وارید کنید"/>
+                <JFXTextField fx:id="txt_number" alignment="CENTER" labelFloat="true" prefHeight="30.0"
+                              prefWidth="200.0" promptText="شماره تماس مشتری را وارید کنید"/>
+                <JFXTextField fx:id="txt_number2" alignment="CENTER" labelFloat="true" prefHeight="30.0"
+                              prefWidth="200.0" promptText="شماره تماس دوم را وارید کنید"/>
+                <JFXTextField fx:id="txt_rage_date" alignment="CENTER" labelFloat="true" layoutX="20.0" layoutY="140.0"
+                              prefHeight="30.0" prefWidth="200.0" promptText="تاریخ ثبت نام"/>
+                <VBox alignment="TOP_CENTER" prefHeight="78.0" prefWidth="191.0" spacing="10.0">
+                    <children>
+                        <HBox prefHeight="30.0" prefWidth="197.0">
+                            <children>
+                                <JFXButton fx:id="btn_cancel" buttonType="RAISED" mnemonicParsing="false"
+                                           onAction="#Cancel" prefHeight="30.0" prefWidth="150.0" ripplerFill="#eb5252"
+                                           text="کنسل"/>
+                                <JFXButton fx:id="btn_ok" buttonType="RAISED" mnemonicParsing="false" onAction="#OK"
+                                           prefHeight="30.0" prefWidth="150.0" ripplerFill="#6752eb" text="ثبت"/>
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="41.0" prefWidth="197.0">
+                            <children>
+                                <JFXButton fx:id="btn_delete" buttonType="RAISED" mnemonicParsing="false"
+                                           onAction="#Delete" prefHeight="30.0" prefWidth="150.0" ripplerFill="#ee0707"
+                                           text="حذف"/>
+                                <JFXButton fx:id="btn_edite" buttonType="RAISED" mnemonicParsing="false"
+                                           onAction="#Edite" prefHeight="30.0" prefWidth="150.0" ripplerFill="#53eb52"
+                                           text="ویرایش"/>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <HBox alignment="CENTER" prefHeight="26.0" prefWidth="191.0">
+                    <children>
+                        <JFXButton fx:id="btn_Close" buttonType="RAISED" mnemonicParsing="false" onAction="#Close"
+                                   prefHeight="44.0" prefWidth="36.0" ripplerFill="#eb5252" text=" ">
+                            <graphic>
+                                <FontAwesomeIcon fill="#e40d0d" iconName="CLOSE" selectionEnd="1" size="3em"/>
+                            </graphic>
+                        </JFXButton>
+                    </children>
+                </HBox>
+            </children>
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </padding>
+        </VBox>
+    </children>
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+    </padding>
+</HBox>

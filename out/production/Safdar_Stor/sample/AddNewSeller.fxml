@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<HBox xmlns:fx="http://javafx.com/fxml/1" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+      minWidth="-Infinity" onMouseDragged="#MoseDraged" onMouseEntered="#MouseEnterd" onMousePressed="#MosePressed"
+      prefHeight="514.0" prefWidth="766.0" spacing="10.0" xmlns="http://javafx.com/javafx/11.0.1"
+      fx:controller="sample.AddNewSeller">
+    <children>
+        <TableView fx:id="table" nodeOrientation="RIGHT_TO_LEFT" prefHeight="481.0" prefWidth="549.0">
+            <columns>
+                <TableColumn fx:id="col_name" prefWidth="119.0" text="اسم"/>
+                <TableColumn fx:id="col_addres" prefWidth="139.0" text="ادرس"/>
+                <TableColumn fx:id="col_namber" prefWidth="108.0" text="نمبر تماس"/>
+                <TableColumn fx:id="col_namber2" prefWidth="87.0" text="نمبر تماس دوم"/>
+                <TableColumn fx:id="col_rag_date" prefWidth="92.0" text="تاریخ ثبت"/>
+            </columns>
+        </TableView>
+        <VBox alignment="CENTER" prefHeight="501.0" prefWidth="193.0" spacing="30.0">
+            <children>
+                <JFXTextField fx:id="name" alignment="CENTER" labelFloat="true" prefHeight="30.0" prefWidth="200.0"
+                              promptText="اسم را وارید کنید"/>
+                <JFXTextField fx:id="address" alignment="CENTER" labelFloat="true" prefHeight="30.0" prefWidth="200.0"
+                              promptText="ادرس را وارید کنید"/>
+                <JFXTextField fx:id="number" alignment="CENTER" labelFloat="true" prefHeight="30.0" prefWidth="200.0"
+                              promptText="شماره تماس را وارید کنید"/>
+                <JFXTextField fx:id="number2" alignment="CENTER" labelFloat="true" prefHeight="30.0" prefWidth="200.0"
+                              promptText="شماره تماس دوم"/>
+                <JFXTextField fx:id="rag_date" alignment="CENTER" labelFloat="true" nodeOrientation="RIGHT_TO_LEFT"
+                              prefHeight="30.0" prefWidth="200.0" promptText="تاریخ ثبت"/>
+                <HBox alignment="CENTER" prefHeight="42.0" prefWidth="190.0">
+                    <children>
+                        <JFXButton buttonType="RAISED" mnemonicParsing="false" onAction="#delete_onAction"
+                                   prefHeight="30.0" prefWidth="63.0" text="حذف"/>
+                        <JFXButton buttonType="RAISED" mnemonicParsing="false" onAction="#ok_onAction" prefHeight="30.0"
+                                   prefWidth="65.0" text="ثبت"/>
+                    </children>
+                </HBox>
+                <JFXButton buttonType="RAISED" mnemonicParsing="false" onAction="#edite_onAction" prefHeight="30.0"
+                           prefWidth="80.0" text="ویرایش"/>
+                <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="10.0" layoutY="383.0" mnemonicParsing="false"
+                           onAction="#close_onAction" prefHeight="30.0" prefWidth="220.0" text=" ">
+                    <graphic>
+                        <FontAwesomeIcon fill="#f20404" iconName="CLOSE" size="3em"/>
+                    </graphic>
+                </JFXButton>
+            </children>
+        </VBox>
+    </children>
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="20.0"/>
+    </padding>
+</HBox>

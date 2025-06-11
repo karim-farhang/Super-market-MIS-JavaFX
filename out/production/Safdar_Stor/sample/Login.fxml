@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+
+<HBox fx:id="background" alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseDragged="#MouseDraged" onMousePressed="#MousePressed" prefHeight="595.0" prefWidth="765.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Login">
+    <children>
+        <VBox prefWidth="300.0" />
+        <VBox alignment="TOP_CENTER" prefWidth="300.0" spacing="40.0">
+            <children>
+                <FontAwesomeIcon iconName="USER" size="11em">
+               <fill>
+                  <RadialGradient centerX="0.4444444444444444" centerY="0.5" focusDistance="-0.046511627906976716" radius="0.686046511627907">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="#d32d2d" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </fill></FontAwesomeIcon>
+                <JFXTextField fx:id="txt_username" alignment="CENTER" labelFloat="true" prefHeight="35.0" prefWidth="200.0" promptText="اسم کاریری تان  را وارید کنید" />
+                <JFXPasswordField fx:id="txt_password" alignment="CENTER" labelFloat="true" prefHeight="35.0" prefWidth="200.0" promptText="گذرواژه تان را وارید کنید" />
+                <JFXButton fx:id="btn_ok" buttonType="RAISED" mnemonicParsing="false" onAction="#ok_on_action" prefHeight="30.0" prefWidth="180.0" text="وارید شدن -&gt;" />
+                <Label text="گذرواژه تان را فراموش کرده اید ؟" />
+                <Label alignment="CENTER" nodeOrientation="RIGHT_TO_LEFT" prefHeight="133.0" prefWidth="255.0" text="تهیه کننده برنامه : کریم فرهنک &#10;ایمل ادرس : karimfarhang2018@gmail.com &#10;شماره های تماس : 0770318869 ، 0730205991&#10;" />
+            </children>
+            <padding>
+                <Insets top="20.0" />
+            </padding>
+        </VBox>
+        <VBox alignment="TOP_RIGHT" prefWidth="300.0">
+            <children>
+                <JFXButton buttonType="RAISED" mnemonicParsing="false" onAction="#Close" prefHeight="44.0" prefWidth="46.0" text=" ">
+                    <graphic>
+                        <FontAwesomeIcon fill="#e40707" iconName="CLOSE" size="3em" />
+                    </graphic>
+                </JFXButton>
+            </children>
+            <padding>
+                <Insets right="10.0" top="10.0" />
+            </padding>
+        </VBox>
+    </children>
+</HBox>

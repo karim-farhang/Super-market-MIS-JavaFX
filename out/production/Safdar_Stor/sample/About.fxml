@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="RIGHT_TO_LEFT" prefHeight="571.0" prefWidth="744.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <tabs>
+        <Tab text="راهنمای استفاده ا---ز برنامه">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <children>
+                        <Label alignment="TOP_LEFT" layoutX="8.0" layoutY="7.0" prefHeight="524.0" prefWidth="728.0" text="برنامه که پیش رو دارید ساخته شده برای مدیریت فروشگاه خیابانی &#10;میباشد لذا از استفاده کننده گان گرامی تفاظا &#10;داریم تا در هنگام ثبت اجناس&#10;و زمان فروش دقت لازم را به کار گیرید بیشتر زمانها &#10;شما اگر دقت به کار نگیرید با علاوه شده یک صفر اضافه یک کم زحمات &#10;یک ساله تان هدر خواهد رفت">
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+            </content>
+        </Tab>
+        <Tab text="در باره سازنده ">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+        </Tab>
+    </tabs>
+</TabPane>

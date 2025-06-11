@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<HBox xmlns:fx="http://javafx.com/fxml/1" alignment="TOP_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+      minWidth="-Infinity" onMouseDragged="#Mouse_Dragged" onMouseEntered="#MouseEneatrd" onMousePressed="#Mouse_Pressed"
+      prefHeight="519.0" prefWidth="673.0" spacing="10.0" xmlns="http://javafx.com/javafx/11.0.1"
+      fx:controller="sample.SellProduct">
+    <children>
+        <TableView fx:id="table" editable="true" nodeOrientation="RIGHT_TO_LEFT" prefHeight="336.0" prefWidth="443.0">
+            <columns>
+                <TableColumn fx:id="col_name" prefWidth="112.0" text="نام"/>
+                <TableColumn fx:id="col_total" prefWidth="63.0" text="تعداد"/>
+                <TableColumn fx:id="col_unit" prefWidth="83.0" text="واحد"/>
+                <TableColumn fx:id="col_price" prefWidth="71.0" text="قیمت"/>
+                <TableColumn fx:id="col_customar" prefWidth="111.0" text="مشتری"/>
+
+            </columns>
+        </TableView>
+        <VBox alignment="TOP_CENTER" nodeOrientation="RIGHT_TO_LEFT" prefHeight="549.0" prefWidth="202.0"
+              spacing="30.0">
+            <children>
+                <HBox alignment="CENTER_LEFT" prefHeight="52.0" prefWidth="428.0" spacing="10.0">
+                    <children>
+                        <JFXComboBox fx:id="comb_product_name" labelFloat="true" onAction="#comb_product_name_onAction"
+                                     prefHeight="30.0" prefWidth="207.0" promptText="نام جنس را وارید کنید"/>
+                    </children>
+                </HBox>
+                <JFXComboBox fx:id="comb_customer" labelFloat="true" prefHeight="30.0" prefWidth="200.0"
+                             promptText="مشتری را انتخاب کنید"/>
+                <HBox alignment="CENTER" prefHeight="40.0" prefWidth="207.0" spacing="10.0">
+                    <children>
+                        <Label prefHeight="30.0" prefWidth="50.0" text="موجودیت"/>
+                        <Label fx:id="total" alignment="CENTER" prefHeight="30.0" prefWidth="50.0" text="000"/>
+                        <Label fx:id="unit" alignment="CENTER" layoutX="58.0" layoutY="10.0" prefHeight="30.0"
+                               prefWidth="50.0" text="واحد"/>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="35.0" prefWidth="198.0" spacing="10.0">
+                    <children>
+                        <Label prefHeight="26.0" prefWidth="105.0" text="قیمت فی واحد"/>
+                        <Label fx:id="price" alignment="CENTER" prefHeight="27.0" prefWidth="56.0" text="0000"/>
+                    </children>
+                </HBox>
+                <JFXTextField fx:id="total_sell" alignment="CENTER" labelFloat="true" prefHeight="30.0"
+                              prefWidth="200.0" promptText="تعداد را وارید کنید"/>
+                <JFXTextField fx:id="price_sell" alignment="CENTER" labelFloat="true" layoutX="10.0" layoutY="167.0"
+                              prefHeight="30.0" prefWidth="200.0" promptText="قیمت فروش را وارید کنید"/>
+                <VBox alignment="CENTER" prefHeight="68.0" prefWidth="201.0">
+                    <children>
+                        <HBox alignment="CENTER" prefHeight="31.0" prefWidth="201.0" spacing="15.0">
+                            <children>
+                                <JFXButton buttonType="RAISED" mnemonicParsing="false" onAction="#btn_ok_onAction"
+                                           prefHeight="30.0" prefWidth="100.0" text="ثبت کردن"/>
+                                <JFXButton buttonType="RAISED" mnemonicParsing="false" onAction="#btn_cncel_onAction"
+                                           prefHeight="30.0" prefWidth="100.0" text="کنسل"/>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <JFXButton buttonType="RAISED" mnemonicParsing="false" onAction="#btn_Delete"
+                                           prefHeight="30.0" prefWidth="100.0" text="حذف"/>
+                                <JFXButton buttonType="RAISED" mnemonicParsing="false"
+                                           onAction="#btn_print_factor_onActio" prefHeight="30.0" prefWidth="100.0"
+                                           text="چاب کردن فاکتور"/>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <JFXButton buttonType="RAISED" mnemonicParsing="false" onAction="#btn_Close_onAction" prefHeight="30.0"
+                           prefWidth="100.0" text="بستن صفحه"/>
+            </children>
+            <padding>
+                <Insets top="10.0"/>
+            </padding>
+        </VBox>
+    </children>
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+    </padding>
+</HBox>

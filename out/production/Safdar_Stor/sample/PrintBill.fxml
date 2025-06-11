@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<HBox xmlns:fx="http://javafx.com/fxml/1" alignment="TOP_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+      minWidth="-Infinity" onMouseDragged="#MouseDragged" onMousePressed="#MousePressed" prefHeight="519.0" prefWidth="784.0"
+      spacing="10.0" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="sample.PrintBill">
+    <children>
+        <JFXTextArea fx:id="txtArea" editable="false" mouseTransparent="true" prefHeight="499.0" prefWidth="576.0">
+            <font>
+                <Font name="Arial" size="18.0"/>
+            </font>
+        </JFXTextArea>
+        <VBox alignment="TOP_CENTER" prefHeight="400.0" prefWidth="188.0" spacing="30.0">
+            <children>
+                <JFXComboBox fx:id="comb_customer_name" labelFloat="true" nodeOrientation="RIGHT_TO_LEFT"
+                             onAction="#Comb_onAction" prefHeight="30.0" prefWidth="200.0"
+                             promptText="مشتری را انتخاب کنید"/>
+                <HBox alignment="CENTER_RIGHT" prefHeight="38.0" prefWidth="183.0" spacing="20.0">
+                    <children>
+                        <Label fx:id="total_bught" alignment="CENTER" prefHeight="30.0" prefWidth="100.0" text="00000"/>
+                        <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="60.0" text="کل خرید "/>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="50.0" prefHeight="38.0" prefWidth="183.0"
+                      spacing="20.0">
+                    <children>
+                        <JFXTextField fx:id="pay_mony" alignment="CENTER" labelFloat="true" prefHeight="30.0"
+                                      prefWidth="100.0" promptText="000 AF"/>
+                        <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="60.0" text="پرداخت"/>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="98.0" prefHeight="38.0" prefWidth="183.0"
+                      spacing="20.0">
+                    <children>
+                        <Label fx:id="rminder" alignment="CENTER" prefHeight="30.0" prefWidth="100.0" text="00000"/>
+                        <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="60.0" text="باقیمانده"/>
+                    </children>
+                </HBox>
+                <JFXTextField fx:id="date" alignment="CENTER" labelFloat="true" promptText="تاریخ "/>
+                <JFXButton buttonType="RAISED" mnemonicParsing="false" onAction="#btn_save_to_file" prefHeight="30.0"
+                           prefWidth="200.0" text="دخیره در فایل "/>
+                <JFXButton buttonType="RAISED" layoutX="10.0" layoutY="90.0" mnemonicParsing="false"
+                           onAction="#btn_Clos" prefHeight="30.0" prefWidth="200.0" text="بستن"/>
+            </children>
+            <padding>
+                <Insets top="10.0"/>
+            </padding>
+        </VBox>
+    </children>
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+    </padding>
+</HBox>

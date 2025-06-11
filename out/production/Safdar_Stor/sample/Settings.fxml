@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<HBox xmlns:fx="http://javafx.com/fxml/1" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+      minWidth="-Infinity" onMouseDragged="#MouseDragged" onMouseEntered="#MouseEntered" onMousePressed="#MousePressed"
+      prefHeight="565.0" prefWidth="909.0" spacing="10.0" xmlns="http://javafx.com/javafx/11.0.1"
+      fx:controller="sample.Settings">
+    <children>
+        <VBox alignment="TOP_CENTER" prefHeight="565.0" prefWidth="223.0" spacing="20.0">
+            <children>
+                <Label text="تنظیمات نمایشگر برنامه"/>
+                <Label text="انتخاب رنگ دلخواه برای پس زمینه"/>
+                <ColorPicker/>
+                <Label text="انتخاب فونت دلخواه برای برنامه"/>
+                <ComboBox prefWidth="150.0"/>
+                <ComboBox prefWidth="150.0"/>
+                <ComboBox prefWidth="150.0"/>
+                <Slider/>
+                <Label alignment="CENTER" prefHeight="30.0" prefWidth="100.0" text="نمونه"/>
+                <JFXButton alignment="CENTER" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0"
+                           text="اعمال کردن"/>
+            </children>
+            <padding>
+                <Insets top="20.0"/>
+            </padding>
+        </VBox>
+        <VBox alignment="TOP_CENTER" prefHeight="565.0" prefWidth="210.0" spacing="20.0">
+            <children>
+                <Label text="تنظیمات واحدات اندازه گیری"/>
+                <ListView fx:id="Units_list" nodeOrientation="RIGHT_TO_LEFT" prefHeight="341.0" prefWidth="200.0"/>
+                <JFXButton buttonType="RAISED" mnemonicParsing="false" onAction="#Units_add_onAction" prefHeight="30.0"
+                           prefWidth="200.0" text="اضافه کردن"/>
+                <JFXButton buttonType="RAISED" layoutX="18.0" layoutY="478.0" mnemonicParsing="false"
+                           onAction="#Units_edite_onAction" prefHeight="30.0" prefWidth="200.0" text="ویرابش کردن"/>
+                <JFXButton buttonType="RAISED" mnemonicParsing="false" onAction="#Units_delete_onAction"
+                           prefHeight="30.0" prefWidth="200.0" text="پاک کردن"/>
+            </children>
+            <padding>
+                <Insets top="20.0"/>
+            </padding>
+        </VBox>
+        <VBox alignment="TOP_CENTER" prefHeight="565.0" prefWidth="210.0" spacing="20.0">
+            <children>
+                <Label text="تنظیمات نوغیت ها"/>
+                <ListView fx:id="Catagory_list" editable="true" nodeOrientation="RIGHT_TO_LEFT" prefHeight="341.0"
+                          prefWidth="200.0"/>
+                <JFXButton fx:id="catagory_add" buttonType="RAISED" mnemonicParsing="false"
+                           onAction="#catagory_add_onAction" prefHeight="30.0" prefWidth="200.0" text="اضافه کردن"/>
+                <JFXButton fx:id="catagory_edite" buttonType="RAISED" layoutX="27.0" layoutY="478.0"
+                           mnemonicParsing="false" onAction="#catagory_edite_onAction" prefHeight="30.0"
+                           prefWidth="200.0" text="ویرابش کردن"/>
+                <JFXButton fx:id="catagory_delate" buttonType="RAISED" mnemonicParsing="false"
+                           onAction="#catagory_delete_onAction" prefHeight="30.0" prefWidth="200.0" text="پاک کردن"/>
+            </children>
+            <padding>
+                <Insets top="20.0"/>
+            </padding>
+        </VBox>
+        <VBox alignment="TOP_CENTER" prefHeight="565.0" prefWidth="210.0" spacing="20.0">
+            <children>
+                <Label text="تنظیمات حساب کاربری"/>
+                <ListView fx:id="User_list" nodeOrientation="RIGHT_TO_LEFT" prefHeight="341.0" prefWidth="200.0"/>
+                <JFXButton buttonType="RAISED" layoutX="109.0" layoutY="289.0" mnemonicParsing="false"
+                           onAction="#User_add_onAction" prefHeight="30.0" prefWidth="200.0" text="اضافه کردن"/>
+                <JFXButton buttonType="RAISED" layoutX="109.0" layoutY="301.0" mnemonicParsing="false"
+                           onAction="#User_edite_onAction" prefHeight="30.0" prefWidth="200.0" text="ویرابش کردن"/>
+                <JFXButton buttonType="RAISED" mnemonicParsing="false" onAction="#User_delete_onAction"
+                           prefHeight="30.0" prefWidth="200.0" text="پاک کردن"/>
+            </children>
+            <padding>
+                <Insets top="20.0"/>
+            </padding>
+        </VBox>
+    </children>
+</HBox>

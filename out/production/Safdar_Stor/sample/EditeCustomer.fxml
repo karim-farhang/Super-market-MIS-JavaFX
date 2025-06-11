@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<HBox xmlns:fx="http://javafx.com/fxml/1" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+      minWidth="-Infinity" onMouseDragged="#MouseDragged" onMousePressed="#MousePressed" prefHeight="354.0"
+      prefWidth="275.0" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="sample.EditeCustomer">
+    <children>
+        <VBox alignment="TOP_CENTER" prefHeight="249.0" prefWidth="228.0" spacing="30.0">
+            <children>
+                <JFXTextField fx:id="txt_name" alignment="CENTER" labelFloat="true" prefHeight="30.0" prefWidth="200.0"
+                              promptText="نام مشتری را وارید کنید"/>
+                <JFXTextField fx:id="txt_address" alignment="CENTER" labelFloat="true" prefHeight="30.0"
+                              prefWidth="200.0" promptText="ادرس مشتری را وارید کنید"/>
+                <JFXTextField fx:id="txt_number" alignment="CENTER" labelFloat="true" prefHeight="30.0"
+                              prefWidth="200.0" promptText="شماره تماس مشتری را وارید کنید"/>
+                <JFXTextField fx:id="txt_number2" alignment="CENTER" labelFloat="true" prefHeight="30.0"
+                              prefWidth="200.0" promptText="شماره تماس دوم را وارید کنید"/>
+                <JFXTextField fx:id="txt_rag_date" alignment="CENTER" labelFloat="true" layoutX="20.0" layoutY="138.0"
+                              prefHeight="30.0" prefWidth="200.0" promptText="تاریخ ثبت"/>
+                <HBox alignment="CENTER" prefHeight="37.0" prefWidth="208.0" spacing="10.0">
+                    <children>
+                        <JFXButton fx:id="btn_Close" buttonType="RAISED" mnemonicParsing="false" onAction="#Close"
+                                   prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: rgb(200,20,20);"
+                                   text="بستن" textFill="#fcf6f6"/>
+                        <JFXButton fx:id="btn_ok" buttonType="RAISED" mnemonicParsing="false" onAction="#OK"
+                                   prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: rgb(20,200,20);"
+                                   text="ثبت" textFill="#fcf6f6"/>
+                    </children>
+                </HBox>
+            </children>
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </padding>
+        </VBox>
+    </children>
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+    </padding>
+</HBox>

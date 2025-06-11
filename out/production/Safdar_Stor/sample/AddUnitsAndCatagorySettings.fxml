@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<HBox xmlns:fx="http://javafx.com/fxml/1" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+      minWidth="-Infinity" prefHeight="117.0" prefWidth="249.0" xmlns="http://javafx.com/javafx/11.0.1"
+      fx:controller="sample.AddUnitsAndCatagorySettings">
+    <children>
+        <VBox alignment="BOTTOM_CENTER" onMouseDragged="#Mose_Drageed" onMousePressed="#Mouse_Pressed"
+              prefHeight="121.0" prefWidth="220.0" spacing="10.0">
+            <children>
+                <JFXTextField fx:id="txt_add" alignment="CENTER" labelFloat="true" prefHeight="30.0" prefWidth="200.0"
+                              promptText="مورد را وارید کنید"/>
+                <HBox alignment="CENTER" prefHeight="39.0" prefWidth="220.0" spacing="10.0">
+                    <children>
+                        <JFXButton buttonType="RAISED" mnemonicParsing="false" onAction="#close_onAction"
+                                   prefWidth="60.0" style="-fx-background-color: rgb(200,30,20);" text="بستن"
+                                   textFill="#f5efef"/>
+                        <JFXButton buttonType="RAISED" mnemonicParsing="false" onAction="#ok_onAction" prefWidth="60.0"
+                                   style="-fx-background-color: rgb(30,200,20);" text="ثبت" textFill="#f5efef"/>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</HBox>
